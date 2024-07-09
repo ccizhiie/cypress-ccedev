@@ -20,6 +20,8 @@ describe('Valid Scenarios', () => {
         cy.get('button').contains('AANMELDEN').click()
     });
 
+    
+//invalid scenarios
     it('login with email field empty', () => {
         cy.get('input[name="password"]').type('password')
         cy.get('button').contains('AANMELDEN').click()
