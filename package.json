@@ -1,0 +1,11 @@
+{
+  "name": "cypress-ccedev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ccizhiie/cypress-ccedev.git",
+  "author": "cinta rahmalya syifa <112394845+ccizhiie@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^13.13.0"
+  }
+}
