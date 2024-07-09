@@ -44,5 +44,20 @@ describe('Valid Scenarios', () => {
         cy.get('button').contains('AANMELDEN').click();
     });
 
+    it('Login with invalid password, valid email', () => {
+        cy.get('input[name="email"]').type('bagus@expinc.io')
+        cy.get('input[name="password"]').type('Password123')
+        cy.get('button').contains('AANMELDEN').click();
+    });
+
+    it('Login with invalid password, valid email 3 times', () => {
+        for (let i = 0; i < 0 ; i++){
+        cy.get('input[name="email"]').type('bagus@expinc.io')
+        cy.get('input[name="password"]').type('Password123')
+        cy.get('button').contains('AANMELDEN').click();
+        }
+    });
+
+
 
 });
