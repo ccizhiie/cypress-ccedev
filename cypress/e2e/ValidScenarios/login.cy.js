@@ -20,8 +20,15 @@ describe('Valid Scenarios', () => {
         cy.get('button').contains('AANMELDEN').click()
     });
 
-    
+});  
 //invalid scenarios
+describe('Invalid Scenarios', () => {
+    const baseUrl = Cypress.config('baseUrl');
+    beforeEach(() => {
+        cy.visit(baseUrl);
+        cy.wait(5000);
+    });
+
     it('login with email field empty', () => {
         cy.get('input[name="password"]').type('password')
         cy.get('button').contains('AANMELDEN').click()
@@ -44,5 +51,24 @@ describe('Valid Scenarios', () => {
         cy.get('button').contains('AANMELDEN').click();
     });
 
-
 });
+
+
+
+
+    //Redirect to Other Sections
+    
+describe('Redirection to Other Sections', () => {
+    const baseUrl = Cypress.config('baseUrl');
+    beforeEach(() => {
+        cy.visit(baseUrl);
+        cy.wait(5000);
+    });
+
+    it('Forget Password redirect user to Forget Password Page', () => {
+        cy.contains('Wachtwoord vergeten?').click();
+    });
+
+
+
+});  
