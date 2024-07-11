@@ -11,7 +11,6 @@ module.exports = defineConfig({
   env: {
     emailUser: 'admin@expinc.io',
     newpass: 'password',
-    // password: 'password', // Pastikan untuk menghapus atau mengaktifkan ini jika diperlukan
   },
   defaultCommandTimeout: 10000, 
   requestTimeout: 5000, 
